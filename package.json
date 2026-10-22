@@ -35,8 +35,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/UNRsports/webxdriver.git"
+    "url": "https://github.com/UNRsports/webxdriver.git"
   },
+  "bugs": {
+    "url": "https://github.com/UNRsports/webxdriver/issues"
+  },
+  "homepage": "https://github.com/UNRsports/webxdriver#readme",
   "keywords": [
     "webdriver",
     "selenium",

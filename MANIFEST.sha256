@@ -1,6 +1,6 @@
 4218296e654cb021a5493f3a7b2bd7a1cfe33b973877e6090eb8c446cdce5f0c  LICENSE
+e481151e811624d940ce8b9b2e57053a0d41ecbe03b383ccb5cc9c156466c921  upstream/README.md
 91161427e1214716919ff250cd13d66b93ec2facc6de558f91caa6a99f547328  upstream/tests/e2e/chrome-extension-id.ts
-7b53bc5f21abc4287e8388fe1298193f7755330296b2355d978da8e9eeeac5b3  upstream/tests/e2e/harness.ts
 a2736dc813c59fcf5a6ba86aeff584931026384f9449d4f57de03a66f698a30b  upstream/tests/e2e/resolve-firefox-extension-uuid.ts
-7b26156310d53e8b2495167692c668f4eb3b260c10c10bcf8096f861ee2f7477  upstream/tests/unit/e2e/chrome-extension-id.test.ts
-30adf9ad825051c15f1c52efde04412818abf09d2df518817d1a8e8988a3b10f  upstream/tests/unit/e2e/resolve-firefox-extension-uuid.test.ts
+c9630feb3f7a53b2992f0121d1d26905434df2df261f38a5a3a21f512f6fc06f  upstream/tests/unit/e2e/chrome-extension-id.test.ts
+d5f35a8e7a2b1eb72b7e7b0ad4077547c7de58fca545e831a4a4f11a10078c7f  upstream/tests/unit/e2e/resolve-firefox-extension-uuid.test.ts

@@ -7,7 +7,7 @@ import { chromeExtensionIdFromPath } from "../../../tests/e2e/chrome-extension-i
 
 describe("chromeExtensionIdFromPath", () => {
   it("returns 32-char a–p id and is stable for the same path", () => {
-    const dir = mkdtempSync(join(tmpdir(), "bmxt-extid-"))
+    const dir = mkdtempSync(join(tmpdir(), "webxdriver-extid-"))
     writeFileSync(join(dir, "manifest.json"), "{}", "utf8")
     const a = chromeExtensionIdFromPath(dir)
     const b = chromeExtensionIdFromPath(dir)

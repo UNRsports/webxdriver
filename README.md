@@ -4,6 +4,7 @@
 
 ## Table of contents
 
+- [Status](#status)
 - [Introduction](#introduction)
 - [Install](#install)
 - [Quick start](#quick-start)
@@ -15,6 +16,15 @@
 - [Provenance](#provenance)
 - [License](#license)
 - [日本語](#japanese)
+
+<a id="status"></a>
+
+## Status
+
+- **Scope:** browser **extensions only** (unpacked Chrome + Firefox). Not a general website E2E framework.
+- **Maturity:** `0.x` — public API may change without a major bump until `1.0.0`.
+- **Tests today:** unit tests (`pnpm test`). Minimal fixture / browser e2e is planned (roadmap item ③).
+- **Consumers:** intended first consumer is [BMXt](https://github.com/UNRsports/bmxt) via a thin wrapper (not switched yet).
 
 <a id="introduction"></a>
 
@@ -42,8 +52,16 @@ It is **runner-agnostic** (Node’s `node:test`, Vitest, Mocha, and similar). Th
 
 ## Install
 
+From npm (when published):
+
 ```bash
 pnpm add -D webxdriver selenium-webdriver
+```
+
+From GitHub (until npm `0.1.0`):
+
+```bash
+pnpm add -D selenium-webdriver github:UNRsports/webxdriver
 ```
 
 <a id="quick-start"></a>
@@ -132,7 +150,8 @@ pnpm run typecheck
 
 ## Provenance
 
-Generalized from the BMXt extension E2E harness. See [`EXTRACT.md`](./EXTRACT.md) and `upstream/` for the original snapshot.
+Generalized from the [BMXt](https://github.com/UNRsports/bmxt) extension E2E harness.
+See [`EXTRACT.md`](./EXTRACT.md) and [`upstream/`](./upstream/) (reference only — not part of the package API).
 
 <a id="license"></a>
 
@@ -150,6 +169,7 @@ This project is licensed under [Apache License 2.0](./LICENSE).
 
 ## 目次
 
+- [ステータス](#status-ja)
 - [はじめに](#introduction-ja)
 - [インストール](#install-ja)
 - [クイックスタート](#quick-start-ja)
@@ -160,6 +180,15 @@ This project is licensed under [Apache License 2.0](./LICENSE).
 - [開発](#development-ja)
 - [出典](#provenance-ja)
 - [ライセンス](#license-ja)
+
+<a id="status-ja"></a>
+
+## ステータス
+
+- **対象:** ブラウザ**拡張機能のみ**（アンパック Chrome + Firefox）。一般サイト向け E2E フレームワークではありません。
+- **成熟度:** `0.x` — `1.0.0` まではメジャー番号なしで API が変わり得ます。
+- **現状のテスト:** unit（`pnpm test`）。最小 fixture / ブラウザ e2e は今後（ロードマップ③）。
+- **想定消費者:** 当面は [BMXt](https://github.com/UNRsports/bmxt)（thin wrapper 切替は未実施）。
 
 <a id="introduction-ja"></a>
 
@@ -187,8 +216,16 @@ This project is licensed under [Apache License 2.0](./LICENSE).
 
 ## インストール
 
+npm 公開後:
+
 ```bash
 pnpm add -D webxdriver selenium-webdriver
+```
+
+GitHub から（npm `0.1.0` まで）:
+
+```bash
+pnpm add -D selenium-webdriver github:UNRsports/webxdriver
 ```
 
 <a id="quick-start-ja"></a>
@@ -277,7 +314,8 @@ pnpm run typecheck
 
 ## 出典
 
-BMXt 拡張の E2E ハーネスを汎用化したものです。元スナップショットは [`EXTRACT.md`](./EXTRACT.md) および `upstream/` を参照してください。
+[BMXt](https://github.com/UNRsports/bmxt) 拡張の E2E ハーネスを汎用化したものです。
+[`EXTRACT.md`](./EXTRACT.md) および [`upstream/`](./upstream/)（参照専用・パッケージ API 外）を参照してください。
 
 <a id="license-ja"></a>
 
