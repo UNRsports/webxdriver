@@ -21,6 +21,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepare": "pnpm run build",
     "test": "node --experimental-strip-types --test \"tests/unit/**/*.test.ts\"",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
