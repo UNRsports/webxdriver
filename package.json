@@ -1,0 +1,48 @@
+{
+  "name": "webxdriver",
+  "version": "0.0.0",
+  "description": "Headless WebDriver harness for unpacked Chrome and Firefox extensions (webXdriver)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test \"tests/unit/**/*.test.ts\"",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "selenium-webdriver": "^4.33.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.5",
+    "@types/selenium-webdriver": "4.1.28",
+    "selenium-webdriver": "4.33.0",
+    "typescript": "5.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/UNRsports/webxdriver.git"
+  },
+  "keywords": [
+    "webdriver",
+    "selenium",
+    "chrome-extension",
+    "firefox-addon",
+    "e2e",
+    "webxdriver"
+  ]
+}
